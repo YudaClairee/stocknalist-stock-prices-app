@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
-import { LogOut, UserIcon } from "lucide-react";
+import { LogOut } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import NavItems from "./NavItems";
 
@@ -30,7 +30,7 @@ function UserDropdown() {
             className="flex items-center gap-3 text-gray-4 hover:text-green-700"
           >
             <Avatar className="size-8">
-              {/* <AvatarImage src="https://github.com/shadcn.png" /> */}
+              <AvatarImage src="https://github.com/shadcn.png" />
               <AvatarFallback className="bg-green-700 text-gray-50 font-medium text-sm">
                 {user.name[0]}
               </AvatarFallback>
@@ -46,7 +46,7 @@ function UserDropdown() {
           <DropdownMenuLabel>
             <div className="flex relative items-center gap-3 py-2">
               <Avatar className="size-8">
-                {/* <AvatarImage src="https://github.com/shadcn.png" /> */}
+                <AvatarImage src="https://github.com/shadcn.png" />
                 <AvatarFallback className="bg-green-700 text-gray-50 font-medium text-sm">
                   {user.name[0]}
                 </AvatarFallback>
